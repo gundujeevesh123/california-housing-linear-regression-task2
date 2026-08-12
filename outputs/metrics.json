@@ -1,0 +1,24 @@
+{
+  "random_state": 42,
+  "test_size": 0.2,
+  "target_column": "HousePrice",
+  "n_train": 16512,
+  "n_test": 4128,
+  "results": {
+    "Linear Regression": {
+      "RMSE": 0.7455813830127763,
+      "R2 Score": 0.575787706032451,
+      "Rank": 3
+    },
+    "Ridge Regression": {
+      "RMSE": 0.7455567442814777,
+      "R2 Score": 0.5758157428913686,
+      "Rank": 2
+    },
+    "Decision Tree": {
+      "RMSE": 0.7242338143386247,
+      "R2 Score": 0.5997321244428706,
+      "Rank": 1
+    }
+  }
+}

@@ -1,0 +1,29 @@
+# AI/ML Task 2 — reproducibility requirements
+#
+# Install:   pip install -r requirements.txt
+# Verified with Python 3.10 and the versions pinned below; older or newer
+# versions in the same minor line typically also work.
+
+# Core ML + numerical stack
+scikit-learn>=1.4      # 1.4 introduced root_mean_squared_error; the notebook
+                       # falls back to mean_squared_error(squared=False) on <1.4
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+joblib>=1.3
+
+# Notebook execution (needed to regenerate the .ipynb from clean state)
+jupyter>=1.0
+nbformat>=5.9
+nbclient>=0.9
+nbconvert>=7.0
+ipykernel>=6.25
+
+# Excel workbook + native charts
+openpyxl>=3.1
+
+# PDF report generation
+fpdf2>=2.7
+
+# Optional — used by src/run_validation.py verification helpers only
+pypdf>=4.0             # PDF page-count / text-extract verification

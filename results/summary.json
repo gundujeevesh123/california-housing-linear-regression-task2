@@ -1,0 +1,134 @@
+{
+  "dataset": {
+    "source": "sklearn.datasets.fetch_california_housing(as_frame=True)",
+    "rows": 20640,
+    "columns": [
+      "MedInc",
+      "HouseAge",
+      "AveRooms",
+      "AveBedrms",
+      "Population",
+      "AveOccup",
+      "Latitude",
+      "Longitude",
+      "HousePrice"
+    ],
+    "missing": 0,
+    "target": "HousePrice",
+    "target_min": 0.14999,
+    "target_max": 5.00001,
+    "target_mean": 2.068558169089147,
+    "target_median": 1.797,
+    "target_std": 1.1539561587441387
+  },
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "n_train": 16512,
+    "n_test": 4128
+  },
+  "results": [
+    {
+      "Model": "Decision Tree",
+      "Train RMSE": 0.6959477541460324,
+      "Test RMSE": 0.7242338143386247,
+      "Train R2": 0.6376786573648903,
+      "Test R2": 0.5997321244428706,
+      "Test MAE": 0.5222592972077786,
+      "R2 Gap": 0.03794653292201966,
+      "Rank": 1
+    },
+    {
+      "Model": "Ridge Regression",
+      "Train RMSE": 0.7196757731612126,
+      "Test RMSE": 0.7455567442814777,
+      "Train R2": 0.6125511218634558,
+      "Test R2": 0.5758157428913686,
+      "Test MAE": 0.5331931195789734,
+      "R2 Gap": 0.03673537897208723,
+      "Rank": 2
+    },
+    {
+      "Model": "Linear Regression",
+      "Train RMSE": 0.7196757085831575,
+      "Test RMSE": 0.7455813830127763,
+      "Train R2": 0.6125511913966952,
+      "Test R2": 0.575787706032451,
+      "Test MAE": 0.5332001304956566,
+      "R2 Gap": 0.03676348536424423,
+      "Rank": 3
+    }
+  ],
+  "cv": [
+    {
+      "Model": "Linear Regression",
+      "CV RMSE mean": 0.7205095145054943,
+      "CV RMSE std": 0.015534652807866521,
+      "CV R2 mean": 0.611456745810643,
+      "CV R2 std": 0.01381746845425205
+    },
+    {
+      "Model": "Ridge Regression",
+      "CV RMSE mean": 0.7205090731464324,
+      "CV RMSE std": 0.015534898909299022,
+      "CV R2 mean": 0.6114572782460861,
+      "CV R2 std": 0.013815664210809878
+    },
+    {
+      "Model": "Decision Tree",
+      "CV RMSE mean": 0.722727161750474,
+      "CV RMSE std": 0.011524973446247842,
+      "CV R2 mean": 0.6091807048950051,
+      "CV R2 std": 0.004100769998464794
+    }
+  ],
+  "winner": "Decision Tree",
+  "environment": {
+    "python": "3.10.12",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.35",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3",
+    "numpy": "2.2.6",
+    "matplotlib": "3.10.9",
+    "joblib": "1.5.3",
+    "random_state": 42,
+    "test_size": 0.2,
+    "n_train": 16512,
+    "n_test": 4128,
+    "winner": "Decision Tree"
+  },
+  "feature_importance": [
+    {
+      "feature": "MedInc",
+      "importance": 0.7712117162048556
+    },
+    {
+      "feature": "AveOccup",
+      "importance": 0.12840674614890735
+    },
+    {
+      "feature": "HouseAge",
+      "importance": 0.041620879936083974
+    },
+    {
+      "feature": "AveRooms",
+      "importance": 0.03126072126800405
+    },
+    {
+      "feature": "Latitude",
+      "importance": 0.0220494802867818
+    },
+    {
+      "feature": "Population",
+      "importance": 0.0024849982871833778
+    },
+    {
+      "feature": "Longitude",
+      "importance": 0.002096950201373814
+    },
+    {
+      "feature": "AveBedrms",
+      "importance": 0.0008685076668100592
+    }
+  ]
+}
